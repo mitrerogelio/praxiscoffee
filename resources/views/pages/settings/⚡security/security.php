@@ -1,9 +1,6 @@
 <?php
 
-namespace App\Livewire\Settings;
-
 use App\Concerns\PasswordValidationRules;
-use Exception;
 use Flux\Flux;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
@@ -19,8 +16,9 @@ use Livewire\Attributes\Title;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
 
+new
 #[Title('Security settings')]
-class Security extends Component
+class extends Component
 {
     use PasswordValidationRules;
 
@@ -309,4 +307,4 @@ class Security extends Component
             'buttonText' => __('Continue'),
         ];
     }
-}
+};

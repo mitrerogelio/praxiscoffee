@@ -1,0 +1,1 @@
+{{-- NOTE: Public Shop Page --}}

@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Livewire\Settings;
-
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
+new
 #[Title('Appearance settings')]
-class Appearance extends Component
+class extends Component
 {
     //
-}
+};

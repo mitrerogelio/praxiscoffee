@@ -1,7 +1,5 @@
 <?php
 
-namespace App\Livewire\Settings;
-
 use App\Concerns\ProfileValidationRules;
 use Flux\Flux;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -10,8 +8,9 @@ use Livewire\Attributes\Computed;
 use Livewire\Attributes\Title;
 use Livewire\Component;
 
+new
 #[Title('Profile settings')]
-class Profile extends Component
+class extends Component
 {
     use ProfileValidationRules;
 
@@ -81,4 +80,4 @@ class Profile extends Component
 
         return ! $user instanceof MustVerifyEmail || $user->hasVerifiedEmail();
     }
-}
+};

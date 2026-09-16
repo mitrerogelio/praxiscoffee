@@ -1,13 +1,11 @@
 <?php
 
-namespace App\Livewire\Settings;
-
+use App\Actions\Logout;
 use App\Concerns\PasswordValidationRules;
-use App\Livewire\Actions\Logout;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Component;
 
-class DeleteUserForm extends Component
+new class extends Component
 {
     use PasswordValidationRules;
 
@@ -26,4 +24,4 @@ class DeleteUserForm extends Component
 
         $this->redirect('/', navigate: true);
     }
-}
+};
